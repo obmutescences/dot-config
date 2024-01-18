@@ -1,0 +1,14 @@
+no-multigrid = false
+vsync = true
+maximized = true
+srgb = false
+idle = true
+frame = "full"
+
+[font]
+normal = { "family" = "Monaspace Radon", "style" = "W600" }
+size = 13
+width = 1.1
+hinting = "full"
+edging = "antialias"
+features = { "Monaspace Radon" = ["+ss01", "+ss02", "+ss03", "+ss04", "+ss05", "+ss06", "+ss07", "+ss08", "+dlig"] }
