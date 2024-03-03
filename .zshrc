@@ -99,7 +99,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval "$(starship init zsh)"
+
+
+# eval "$(starship init zsh)"
+
+# shell oh-my-posh setting
+# first install oh-my-posh
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/powerlevel10k_rainbow.omp.json)"
 
 source "$HOME/.cargo/env"
 eval "$(atuin init zsh)"
@@ -121,3 +127,6 @@ export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 alias docker="sudo docker"
 alias tail="tspin"
 alias lzd='lazydocker'
+
+alias ls="lsd -a"
+eval "$(zoxide init zsh --cmd cd)"
