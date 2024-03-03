@@ -89,7 +89,7 @@ keymap = [
 	{ keys = [ "V" ],		command = "toggle_visual"},
 
 	{ keys = [ "w" ],		command = "show_tasks --exit-key=w" },
-	{ keys = [ "b", "b" ],		command = "bulk_rename" },
+	# { keys = [ "b", "b" ],		command = "bulk_rename" },
 	{ keys = [ "=" ],		command = "set_mode" },
 
 	{ keys = [ ":" ],		command = ":" },
