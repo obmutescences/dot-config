@@ -18,9 +18,10 @@ video_default	= [
 ]
 
 text_default	= [
-	{ command = "micro" },
-	{ command = "gedit", fork = true, silent = true },
-	{ command = "bat", args = [ "--paging=always" ] },
+	# { command = "micro" },
+	# { command = "gedit", fork = true, silent = true },
+	# { command = "bat", args = [ "--paging=always" ] },
+	{ command = "nvim" },
 ]
 
 reader_default	= [
