@@ -130,7 +130,7 @@
 					"invert_powerline": true,
 					"style": "diamond",
 					"template": " {{ .CurrentDate | date .Format }} \uf017 ",
-					"trailing_diamond": "\u2500\u256e ",
+					"trailing_diamond": "\u2500\u256e",
 					"type": "time"
 				}
 			],

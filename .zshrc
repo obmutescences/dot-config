@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+source /home/zerone/.oh-my-zsh/custom/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -115,9 +117,9 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 
-export https_proxy=http://192.168.2.105:7890 
-export http_proxy=http://192.168.2.105:7890 
-export all_proxy=socks5://192.168.2.105:7890
+export https_proxy=http://127.0.0.1:7890 
+export http_proxy=http://127.0.0.1:7890 
+export all_proxy=socks5://127.0.0.1:7890
 
 [[ -s "/home/local/.gvm/scripts/gvm" ]] && source "/home/local/.gvm/scripts/gvm"
 
@@ -125,8 +127,8 @@ export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 
 alias docker="sudo docker"
-alias tail="tspin"
-alias lzd='lazydocker'
 
 alias ls="lsd -a"
 eval "$(zoxide init zsh --cmd cd)"
+
+bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
