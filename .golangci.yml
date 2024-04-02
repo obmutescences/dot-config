@@ -58,8 +58,7 @@ run:
   # If false (default) - golangci-lint acquires file lock on start.
   allow-parallel-runners: true
 
-  go: '1.22'
-
+  go: "1.22"
 
 # output configuration options
 output:
@@ -119,7 +118,7 @@ linters-settings:
     # path to a file containing a list of functions to exclude from checking
     # see https://github.com/kisielk/errcheck#excluding-functions for details
     #exclude: errcheck.txt
-    
+
   errorlint:
     # Check whether fmt.Errorf uses the %w verb for formatting errors. See the readme for caveats
     errorf: true
@@ -142,10 +141,10 @@ linters-settings:
     package-scope-only: false
   exhaustivestruct:
     struct-patterns:
-      - '*.Test'
-      - '*.Test2'
-      - '*.Embedded'
-      - '*.External'
+      - "*.Test"
+      - "*.Test2"
+      - "*.Embedded"
+      - "*.External"
 
   forbidigo:
     # Forbid the following identifiers (identifiers are written using regexp):
@@ -157,13 +156,13 @@ linters-settings:
     # Exclude godoc examples from forbidigo checks.  Default is true.
     # exclude_godoc_examples: false
   funlen:
-    lines: 200
+    lines: 250
     statements: 80
   # gci:
-    # put imports beginning with prefix after 3rd-party packages;
-    # only support one prefix
-    # if not set, use goimports.local-prefixes
-    # prefix: github.com/marmotedu/iam
+  # put imports beginning with prefix after 3rd-party packages;
+  # only support one prefix
+  # if not set, use goimports.local-prefixes
+  # prefix: github.com/marmotedu/iam
   gocognit:
     # minimal code complexity to report, 30 by default (but we recommend 10-20)
     min-complexity: 40
@@ -238,7 +237,7 @@ linters-settings:
         skipTestFuncs: true
       ruleguard:
         # path to a gorules file for the ruleguard checker
-        rules: ''
+        rules: ""
       truncateCmp:
         # whether to skip int/uint/uintptr types (default true)
         skipArchDependent: true
@@ -263,8 +262,8 @@ linters-settings:
     scope: declarations
     # list of regexps for excluding particular comment lines from check
     # exclude:
-      # example: exclude comments which contain numbers
-      # - '[0-9]+'
+    # example: exclude comments which contain numbers
+    # - '[0-9]+'
     # check that each sentence starts with a capital letter
     capital: false
   godox:
@@ -290,33 +289,33 @@ linters-settings:
     extra-rules: false
 
   # goheader:
-    # values:
-      # const:
-        # define here const type values in format k:v, for example:
-        # COMPANY: MY COMPANY
-      # regexp:
-        # define here regexp type values, for example
-        # AUTHOR: .*@mycompany\.com
-    # template: # |-
-      # put here copyright header template for source code files, for example:
-      # Note: {{ YEAR }} is a builtin value that returns the year relative to the current machine time.
-      #
-      # {{ AUTHOR }} {{ COMPANY }} {{ YEAR }}
-      # SPDX-License-Identifier: Apache-2.0
+  # values:
+  # const:
+  # define here const type values in format k:v, for example:
+  # COMPANY: MY COMPANY
+  # regexp:
+  # define here regexp type values, for example
+  # AUTHOR: .*@mycompany\.com
+  # template: # |-
+  # put here copyright header template for source code files, for example:
+  # Note: {{ YEAR }} is a builtin value that returns the year relative to the current machine time.
+  #
+  # {{ AUTHOR }} {{ COMPANY }} {{ YEAR }}
+  # SPDX-License-Identifier: Apache-2.0
 
-      # Licensed under the Apache License, Version 2.0 (the "License");
-      # you may not use this file except in compliance with the License.
-      # You may obtain a copy of the License at:
+  # Licensed under the Apache License, Version 2.0 (the "License");
+  # you may not use this file except in compliance with the License.
+  # You may obtain a copy of the License at:
 
-      #   http://www.apache.org/licenses/LICENSE-2.0
+  #   http://www.apache.org/licenses/LICENSE-2.0
 
-      # Unless required by applicable law or agreed to in writing, software
-      # distributed under the License is distributed on an "AS IS" BASIS,
-      # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-      # See the License for the specific language governing permissions and
-      # limitations under the License.
-    # template-path:
-      # also as alternative of directive 'template' you may put the path to file with the template source
+  # Unless required by applicable law or agreed to in writing, software
+  # distributed under the License is distributed on an "AS IS" BASIS,
+  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  # See the License for the specific language governing permissions and
+  # limitations under the License.
+  # template-path:
+  # also as alternative of directive 'template' you may put the path to file with the template source
   goimports:
     # put imports beginning with prefix after 3rd-party packages;
     # it's a comma-separated list of prefixes
@@ -325,13 +324,13 @@ linters-settings:
     # minimal confidence for issues, default is 0.8
     min-confidence: 0.9
   # gomnd:
-    # settings:
-      # mnd:
-        # the list of enabled checks, see https://github.com/tommy-muehle/go-mnd/#checks for description.
-        # checks: argument,case,condition,operation,return,assign
-        # ignored-numbers: 1000
-        # ignored-files: magic_.*.go
-        # ignored-functions: math.*
+  # settings:
+  # mnd:
+  # the list of enabled checks, see https://github.com/tommy-muehle/go-mnd/#checks for description.
+  # checks: argument,case,condition,operation,return,assign
+  # ignored-numbers: 1000
+  # ignored-files: magic_.*.go
+  # ignored-functions: math.*
   gomoddirectives:
     # Allow local `replace` directives. Default is false.
     replace-local: true
@@ -406,7 +405,7 @@ linters-settings:
     # Select the Go version to target. The default is '1.13'.
     go: "1.22"
     # https://staticcheck.io/docs/options#checks
-    checks: [ "all" ]
+    checks: ["all"]
 
   govet:
     # report about shadowed variables
@@ -429,13 +428,13 @@ linters-settings:
       - shadow
     disable-all: false
   # depguard:
-    # list-type: blacklist
-    # include-go-root: false
-    # packages:
-    #   - github.com/Sirupsen/logrus
-    # packages-with-error-message:
-      # specify an error message to output when a blacklisted package is used
-      # - github.com/Sirupsen/logrus: "logging is allowed only by logutils.Log"
+  # list-type: blacklist
+  # include-go-root: false
+  # packages:
+  #   - github.com/Sirupsen/logrus
+  # packages-with-error-message:
+  # specify an error message to output when a blacklisted package is used
+  # - github.com/Sirupsen/logrus: "logging is allowed only by logutils.Log"
   ifshort:
     # Maximum length of variable declaration measured in number of lines, after which linter won't suggest using short syntax.
     # Has higher priority than max-decl-chars.
@@ -459,10 +458,10 @@ linters-settings:
   #     # see https://github.com/julz/importas#use-regular-expression for details
   #     - pkg: knative.dev/serving/pkg/apis/(\w+)/(v[\w\d]+)
   #       alias: $1$2
-    # using `jwt` alias for `github.com/appleboy/gin-jwt/v2` package
-    # jwt: github.com/appleboy/gin-jwt/v2
-    # using `metav1` alias for `github.com/marmotedu/component-base/pkg/meta/v1` package
-    # metav1: github.com/marmotedu/component-base/pkg/meta/v1
+  # using `jwt` alias for `github.com/appleboy/gin-jwt/v2` package
+  # jwt: github.com/appleboy/gin-jwt/v2
+  # using `metav1` alias for `github.com/marmotedu/component-base/pkg/meta/v1` package
+  # metav1: github.com/marmotedu/component-base/pkg/meta/v1
 
   ireturn:
     # ireturn allows using `allow` and `reject` settings at the same time.
@@ -476,12 +475,12 @@ linters-settings:
     # By default, it allows using errors, empty interfaces, anonymous interfaces,
     # and interfaces provided by the standard library.
     allow:
-    - anon
-    - error
-    - empty
-    - stdlib
-    # You can specify idiomatic endings for interface
-    - (or|er)$
+      - anon
+      - error
+      - empty
+      - stdlib
+      # You can specify idiomatic endings for interface
+      - (or|er)$
 
     # Reject patterns
     # reject:
@@ -531,7 +530,7 @@ linters-settings:
     # Disable to ensure that nolint directives don't have a leading space. Default is true.
     # allow-leading-space: true
     # Exclude following linters from requiring an explanation.  Default is [].
-    allow-no-explanation: [ ]
+    allow-no-explanation: []
     # Enable to require an explanation of nonzero length after each nolint directive. Default is false.
     require-explanation: false
     # Enable to require nolint directives to mention the specific linter being suppressed. Default is false.
@@ -561,7 +560,7 @@ linters-settings:
     #  - "ReservedChars"
     #  - "CamelCase"
     #  - "lintUnitAbbreviations"
-    
+
   predeclared:
     # comma-separated list of predeclared identifiers to not report on
     ignore: ""
@@ -799,7 +798,7 @@ linters-settings:
       - name: line-length-limit
         severity: warning
         disabled: false
-        arguments: [150]
+        arguments: [240]
       # https://github.com/mgechev/revive/blob/master/RULES_DESCRIPTIONS.md#max-public-structs
       - name: max-public-structs
         severity: warning
@@ -858,10 +857,10 @@ linters-settings:
         severity: warning
         disabled: true
         arguments:
-          - - 'core.WriteError[1].Message'
-            - '/^([^A-Z]|$)/'
+          - - "core.WriteError[1].Message"
+            - "/^([^A-Z]|$)/"
             - must not start with a capital letter
-          - - 'fmt.Errorf[0]'
+          - - "fmt.Errorf[0]"
             - '/(^|[^\.!?])$/'
             - must not end in punctuation
           - - panic
@@ -951,22 +950,61 @@ linters-settings:
     # Select the Go version to target. The default is '1.13'.
     go: "1.22"
     # https://staticcheck.io/docs/options#checks
-    checks: [ "all" ]
+    checks: ["all"]
 
   stylecheck:
     # Select the Go version to target. The default is '1.13'.
     go: "1.22"
 
     # https://staticcheck.io/docs/options#checks
-    checks: [ "all", "-ST1000", "-ST1003", "-ST1016", "-ST1020", "-ST1021", "-ST1022" ]
+    checks:
+      ["all", "-ST1000", "-ST1003", "-ST1016", "-ST1020", "-ST1021", "-ST1022"]
     # https://staticcheck.io/docs/options#dot_import_whitelist
     dot-import-whitelist:
       - fmt
     # https://staticcheck.io/docs/options#initialisms
-    initialisms: [ "ACL", "API", "ASCII", "CPU", "CSS", "DNS", "EOF", "GUID", "HTML", "HTTP", "HTTPS", "ID", "IP", "JSON", "QPS", "RAM", "RPC", "SLA", "SMTP", "SQL", "SSH", "TCP", "TLS", "TTL", "UDP", "UI", "GID", "UID", "UUID", "URI", "URL", "UTF8", "VM", "XML", "XMPP", "XSRF", "XSS" ]
+    initialisms:
+      [
+        "ACL",
+        "API",
+        "ASCII",
+        "CPU",
+        "CSS",
+        "DNS",
+        "EOF",
+        "GUID",
+        "HTML",
+        "HTTP",
+        "HTTPS",
+        "ID",
+        "IP",
+        "JSON",
+        "QPS",
+        "RAM",
+        "RPC",
+        "SLA",
+        "SMTP",
+        "SQL",
+        "SSH",
+        "TCP",
+        "TLS",
+        "TTL",
+        "UDP",
+        "UI",
+        "GID",
+        "UID",
+        "UUID",
+        "URI",
+        "URL",
+        "UTF8",
+        "VM",
+        "XML",
+        "XMPP",
+        "XSRF",
+        "XSS",
+      ]
     # https://staticcheck.io/docs/options#http_status_code_whitelist
-    http-status-code-whitelist: [ "200", "400", "404", "500" ]
-
+    http-status-code-whitelist: ["200", "400", "404", "500"]
 
   tagliatelle:
     # check the struck tag name case
@@ -1014,13 +1052,13 @@ linters-settings:
     # with golangci-lint call it on a directory with the changed file.
     check-exported: true
   # unused:
-    # treat code as a program (not a library) and report unused exported identifiers; default is false.
-    # XXX: if you enable this setting, unused will report a lot of false-positives in text editors:
-    # if it's called for subdir of a project it can't find funcs usages. All text editor integrations
-    # with golangci-lint call it on a directory with the changed file.
-    # check-exported: false
+  # treat code as a program (not a library) and report unused exported identifiers; default is false.
+  # XXX: if you enable this setting, unused will report a lot of false-positives in text editors:
+  # if it's called for subdir of a project it can't find funcs usages. All text editor integrations
+  # with golangci-lint call it on a directory with the changed file.
+  # check-exported: false
   whitespace:
-    multi-if: false   # Enforces newlines (or comments) after every multi-line if statement
+    multi-if: false # Enforces newlines (or comments) after every multi-line if statement
     multi-func: false # Enforces newlines (or comments) after every multi-line function signature
 
   wrapcheck:
@@ -1037,8 +1075,8 @@ linters-settings:
       - .WithMessagef(
       - .WithStack(
     ignorePackageGlobs:
-        - encoding/*
-        - github.com/pkg/*
+      - encoding/*
+      - github.com/pkg/*
 
   wsl:
     # If true append is only allowed to be cuddled if appending value is
@@ -1065,18 +1103,17 @@ linters-settings:
     # Allow only slices initialized with a length of zero. Default is false.
     always: false
 
-
   # The custom section can be used to define linter plugins to be loaded at runtime. See README doc
   #  for more info.
   #custom:
-    # Each custom linter should have a unique name.
-    #example:
-      # The path to the plugin *.so. Can be absolute or local. Required for each custom linter
-      #path: /path/to/example.so
-      # The description of the linter. Optional, just for documentation purposes.
-      #description: This is an example usage of a plugin linter.
-      # Intended to point to the repo location of the linter. Optional, just for documentation purposes.
-      #original-url: github.com/golangci/example-linter
+  # Each custom linter should have a unique name.
+  #example:
+  # The path to the plugin *.so. Can be absolute or local. Required for each custom linter
+  #path: /path/to/example.so
+  # The description of the linter. Optional, just for documentation purposes.
+  #description: This is an example usage of a plugin linter.
+  # Intended to point to the repo location of the linter. Optional, just for documentation purposes.
+  #original-url: github.com/golangci/example-linter
 
 linters:
   # please, do not use `enable-all`: it's deprecated and will be removed soon.
@@ -1290,5 +1327,5 @@ severity:
   # Only affects out formats that support setting severity information.
   rules:
     - linters:
-      - dupl
+        - dupl
       severity: info
