@@ -244,9 +244,9 @@
     "rotate": 0,
     "format-muted": "婢",
     "on-click": "pavucontrol -t 3",
-    "on-click-middle": "/home/local/.config/hyprdots/scripts/volumecontrol.sh -o m",
-    "on-scroll-up": "/home/local/.config/hyprdots/scripts/volumecontrol.sh -o i",
-    "on-scroll-down": "/home/local/.config/hyprdots/scripts/volumecontrol.sh -o d",
+    "on-click-middle": "volumecontrol.sh -o m",
+    "on-scroll-up": "volumecontrol.sh -o i",
+    "on-scroll-down": "volumecontrol.sh -o d",
     "tooltip-format": "{icon} {desc} // {volume}%",
     "scroll-step": 2,
     "format-icons": {
@@ -266,27 +266,28 @@
     "format-source": "",
     "format-source-muted": "",
     "on-click": "pavucontrol -t 4",
-    "on-click-middle": "/home/local/.config/hyprdots/scripts/volumecontrol.sh -i m",
-    "on-scroll-up": "/home/local/.config/hyprdots/scripts/volumecontrol.sh -i i",
-    "on-scroll-down": "/home/local/.config/hyprdots/scripts/volumecontrol.sh -i d",
+    "on-click-middle": "volumecontrol.sh -i m",
+    "on-scroll-up": "volumecontrol.sh -i i",
+    "on-scroll-down": "volumecontrol.sh -i d",
     "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
     "scroll-step": 5,
   },
 
   "custom/updates": {
-    "exec": "/home/local/.config/hyprdots/scripts/systemupdate.sh",
+    "exec": "systemupdate.sh",
     "return-type": "json",
     "format": "<span foreground='#F875AA'>󰮯 {}</span>",
     "rotate": 0,
-    "on-click": "/home/local/.config/hyprdots/scripts/systemupdate.sh up",
+    "on-click": "systemupdate.sh up",
     "interval": 86400, // once every day
     "tooltip": true,
+    "signal": 20,
   },
 
   "custom/keybindhint": {
     "format": " ",
     "rotate": 0,
-    "on-click": "/home/local/.config/hyprdots/scripts/keybinds_hint.sh",
+    "on-click": "keybinds_hint.sh",
   },
 
   "tray": {
@@ -357,8 +358,8 @@
     "format": "<span color='#BE0000'>{}</span>",
     "rotate": 0,
     "exec": "echo ; echo  logout",
-    "on-click": "/home/local/.config/hyprdots/scripts/logoutlaunch.sh 2",
-    "on-click-right": "/home/local/.config/hyprdots/scripts/logoutlaunch.sh 1",
+    "on-click": "logoutlaunch.sh 2",
+    "on-click-right": "logoutlaunch.sh 1",
     "interval": 86400, // once every day
     "tooltip": true,
   },
