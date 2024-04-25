@@ -276,7 +276,7 @@
   "custom/updates": {
     "exec": "systemupdate.sh",
     "return-type": "json",
-    "format": "<span foreground='#F875AA'>󰮯 {}</span>",
+    "format": "<span foreground='#F875AA'>{}</span>",
     "rotate": 0,
     "on-click": "systemupdate.sh up",
     "interval": 86400, // once every day
