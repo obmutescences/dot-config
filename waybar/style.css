@@ -3,11 +3,11 @@
   border-radius: 2px;
   font-family: "Monaspace Radon";
   font-weight: bold;
-  font-size: 9px;
+  font-size: 10px;
   min-height: 10px;
 }
 
-@import "themes/theme.css";
+@import "theme.css";
 
 window#waybar {
   background: @bar-bg;
