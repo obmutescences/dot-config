@@ -37,7 +37,7 @@ beep_after_seconds = 0
 # psql, plain, simple, grid, fancy_grid, pipe, orgtbl, rst, mediawiki, html,
 # latex, latex_booktabs, textile, moinmoin, jira, vertical, tsv, csv.
 # Recommended: ascii
-table_format = vertical
+table_format = simple
 
 # Syntax coloring style. Possible values (many support the "-dark" suffix):
 # manni, igor, xcode, vim, autumn, vs, rrt, native, perldoc, borland, tango, emacs,
@@ -45,7 +45,7 @@ table_format = vertical
 # fruity.
 # Screenshots at http://mycli.net/syntax
 # Can be further modified in [colors]
-syntax_style = friendly
+syntax_style = native
 
 # Keybindings: Possible values: emacs, vi.
 # Emacs mode: Ctrl-A is home, Ctrl-E is end. All emacs keybindings are available in the REPL.
@@ -158,3 +158,5 @@ output.null = "#808080"
 [alias_dsn]
 # example_dsn = mysql://[user[:password]@][host][:port][/dbname]
 game_center_90 = mysql://game_center:sSTrYY5LLYxRitS6@192.168.2.90:3306/game_center
+game_center_102 = mysql://root:joint.jager.168@192.168.2.102:3306/game_center
+game_manage_90 = mysql://game_manage:aWMcJakiGjHiepdb@192.168.2.90:3306/game_manage
