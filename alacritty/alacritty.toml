@@ -54,12 +54,12 @@ shape = "Beam"
 size = 10.0
 
 [font.normal]
-# family = "Myfonts"
-family = "ConsolaMono"
+family = "Myfonts"
+# family = "ConsolaMono"
 
 [font.offset]
-x = 1
-y = 1
+x = 2
+y = 2
 
 [[keyboard.bindings]]
 action = "ResetFontSize"
