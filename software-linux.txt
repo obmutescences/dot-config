@@ -102,3 +102,6 @@ zsh 5.9-5
 
 # office
 LibreOffice
+
+# git diff
+git-delta
