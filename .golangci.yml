@@ -1132,7 +1132,6 @@ linters:
     - whitespace
     - bidichk
     - wastedassign
-    - execinquery
     - nosprintfhostport
     - grouper
     - decorder
