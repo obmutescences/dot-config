@@ -114,7 +114,9 @@ eval "$(atuin init zsh)"
 
 # go
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export GOBIN=$(go env GOPATH)/bin
+export PATH=$PATH:$GOPATH
+export PATH=$PATH:$GOBIN
 
 
 export https_proxy=http://127.0.0.1:7890 
@@ -132,3 +134,5 @@ alias ls="lsd -a"
 eval "$(zoxide init zsh --cmd cd)"
 
 bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+
+alias ya=yazi
