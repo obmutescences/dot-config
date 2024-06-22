@@ -130,6 +130,7 @@ export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 
 alias docker="sudo docker"
 
+export LS_COLORS="di=34"
 alias ls="lsd -a"
 eval "$(zoxide init zsh --cmd cd)"
 
