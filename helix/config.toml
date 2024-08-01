@@ -1,0 +1,33 @@
+theme = "everforest_dark"
+
+[editor]
+line-number = "absolute"
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+S = ":w"
+Q = ":q"
+n = "move_char_left"
+u = "move_visual_line_up"
+i = "move_char_right"
+
+l = "undo"
+
+[keys.normal.g]
+a = "code_action"
+
+[keys.insert]
+"C-[" = "normal_mode" # Maps `jk` to exit insert mode
+
+"C-p"= "move_line_up"
+"C-j" =	"move_line_down"
+"C-b" = "move_char_left"
+"C-f" = "move_char_right"
