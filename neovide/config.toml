@@ -1,22 +1,24 @@
-no-multigrid = false
 vsync = true
-maximized = true
-srgb = false
+frame = "transparent"
+no-multigrid = false
+maximized = false
+srgb = true
 idle = true
-frame = "full"
 
 [font]
-# normal = { "family" = "Monaspace Radon", "style" = "W100" }
-# size = 10
-# width = 1.1
-# normal = { "family" = "Comic Mono", "style" = "W100" }
-# size = 10
-# width = 1.3
-# normal = { "family" = "UbuntuSansMono Nerd Font", "style" = "W300" }
-# normal = { "family" = "ComicShannsMono Nerd Font", "style" = "W100" }
-normal = { "family" = "CodeNewRoman Nerd Font", "style" = "W100" }
-size = 10
-width = 1.1
-hinting = "full"
-edging = "antialias"
-features = { "Monaspace Radon" = ["+ss01", "+ss02", "+ss03", "+ss04", "+ss05", "+ss06", "+ss07", "+ss08", "+calt", "+liga"] } # +dlig
+# normal = { family = "Monaspace Radon", style = "W100"}
+# normal = { family = "CodeNewRoman Nerd Font Mono", style = "W100"}
+# normal = { family = "ComicShannsMono Nerd Font Mono", style = "W100"}
+# normal = { family = "UbuntuSansMono Nerd Font Mono", style = "W300"}
+
+size = 12
+# features = { "Monaspace Radon" = ["+ss01", "+ss02","+ss03","+ss04","+ss05","+ss06","+ss07", "+ss08", "+dlig"] }
+features = { "Comic Code" = ["+ss01", "+ss02","+ss03","+ss04","+ss05","+ss06","+ss07", "+ss08", "+dlig"] }
+width = 1.3
+[[font.normal]]
+family =  "Comic Code"
+style = "Italic"
+
+[[font.normal]]
+family =  "CodeNewRoman Nerd Font Mono"
+style = "W100"
