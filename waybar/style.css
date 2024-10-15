@@ -1,10 +1,10 @@
 * {
   border: none;
   border-radius: 0px;
-  font-family: "Monaspace Radon";
+  font-family: "Comic Code";
   font-weight: bold;
-  font-size: 10px;
-  min-height: 20px;
+  font-size: 12px;
+  min-height: 10px;
 }
 
 @import "theme.css";
@@ -33,6 +33,7 @@ tooltip {
   margin-right: 0px;
   color: @main-fg;
   animation: ws_normal 20s ease-in-out 1;
+  background: linear-gradient(#3a4230, rgba(58, 66, 48, 0.6));
 }
 
 #workspaces button.active {
@@ -118,7 +119,19 @@ tooltip {
 #custom-updates,
 #custom-wallchange,
 #custom-wbar,
-#window,
+#window {
+  min-height: 0;
+  padding: 0px 6px;
+  border-radius: 4px;
+  margin: 4px 4px;
+  /* background: linear-gradient(#6b7d60, rgba(107, 125, 96, 0.8)); */
+  background: linear-gradient(#3a4230, rgba(58, 66, 48, 0.6));
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
 #workspaces,
 #custom-l_end,
 #custom-r_end,
