@@ -23,7 +23,7 @@ run:
   # If false (default) - golangci-lint acquires file lock on start.
   allow-parallel-runners: true
 
-  go: "1.22"
+  go: "1.23"
 
 # output configuration options
 output:
