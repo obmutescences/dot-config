@@ -266,14 +266,14 @@
         "storage",
         "cpu",
         "ram",
-        "windowtitle",
-        "netstat"
+        "windowtitle"
       ],
       "middle": [
         "workspaces",
         "clock"
       ],
       "right": [
+        "netstat",
         "systray",
         "volume",
         "notifications",
