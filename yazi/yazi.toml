@@ -3,8 +3,8 @@
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [manager]
-ratio          = [ 1, 4, 3 ]
-sort_by        = "modified"
+ratio          = [ 1, 3, 4 ]
+sort_by        = "alphabetical"
 sort_sensitive = false
 sort_reverse   = false
 sort_dir_first = false
@@ -23,6 +23,7 @@ image_quality   = 75
 sixel_fraction  = 15
 ueberzug_scale  = 1
 ueberzug_offset = [ 0, 0, 0, 0 ]
+wrap = "yes"
 
 [opener]
 edit = [
@@ -65,11 +66,11 @@ rules = [
 
 	{ mime = "application/zip",             use = [ "extract", "reveal" ] },
 	{ mime = "application/gzip",            use = [ "extract", "reveal" ] },
-	{ mime = "application/x-tar",           use = [ "extract", "reveal" ] },
-	{ mime = "application/x-bzip",          use = [ "extract", "reveal" ] },
-	{ mime = "application/x-bzip2",         use = [ "extract", "reveal" ] },
-	{ mime = "application/x-7z-compressed", use = [ "extract", "reveal" ] },
-	{ mime = "application/x-rar",           use = [ "extract", "reveal" ] },
+	{ mime = "application/tar",           use = [ "extract", "reveal" ] },
+	{ mime = "application/bzip",          use = [ "extract", "reveal" ] },
+	{ mime = "application/bzip2",         use = [ "extract", "reveal" ] },
+	{ mime = "application/7z-compressed", use = [ "extract", "reveal" ] },
+	{ mime = "application/rar",           use = [ "extract", "reveal" ] },
 	{ mime = "application/xz",              use = [ "extract", "reveal" ] },
 
 	{ mime = "*", use = [ "open", "reveal" ] },
@@ -86,7 +87,6 @@ suppress_preload = false
 [plugin]
 
 preloaders = [
-	{ name = "*", cond = "!mime", run = "mime", multi = true, prio = "high" },
 	# Image
 	{ mime = "image/vnd.djvu", run = "noop" },
 	{ mime = "image/*",        run = "image" },
@@ -131,7 +131,7 @@ cd_origin = "top-center"
 cd_offset = [ 0, 2, 50, 3 ]
 
 # create
-create_title  = "Create:"
+create_title  = ["Create:", "Create(dir):"]
 create_origin = "top-center"
 create_offset = [ 0, 2, 50, 3 ]
 
@@ -180,7 +180,7 @@ quit_title  = "{n} task{s} running, sure to quit? (y/N)"
 quit_origin = "top-center"
 quit_offset = [ 0, 2, 50, 3 ]
 
-[select]
+[pick]
 open_title  = "Open with:"
 open_origin = "hovered"
 open_offset = [ 0, 1, 50, 7 ]
