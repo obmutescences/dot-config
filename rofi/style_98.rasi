@@ -40,7 +40,7 @@ window {
     padding:                     0px;
     border-radius:               0px;
     cursor:                      "default";
-    background-color:            #22272C;
+	background-color:            rgba(34, 39, 44, 0.1); /* 添加透明度 */
 }
 
 /*****----- Main Box -----*****/
@@ -126,10 +126,6 @@ element {
     text-color:                  gray;
     cursor:                      pointer;
 }
-element normal.normal {
-    background-color:            #22272C;
-    text-color:                  gray;
-}
 element selected.normal {
     background-color:           #3E432E;
     text-color:                 #E06C75FF;
@@ -157,7 +153,7 @@ mode-switcher{
     spacing:                     0px;
     padding:                     12px;
     border-radius:               100%;
-    background-color:            #2E343B;
+	background-color:            rgba(34, 39, 44, 0.1); /* 添加透明度 */
 }
 button {
     background-color:            inherit;
