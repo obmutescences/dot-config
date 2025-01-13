@@ -75,7 +75,7 @@ textbox-prompt-colon {
     expand:                      false;
     padding:                     8px 11px;
     border-radius:               100%;
-    background-color:            gray;
+    background-color:            #AACB73;
     text-color:                  black;
     str:                         "";
 }
@@ -84,7 +84,7 @@ entry {
     padding:                     8px 12px;
     border:                      0px;
     background-color:            transparent;
-    text-color:                  gray;
+    text-color:                  #AACB73;
     cursor:                      text;
     placeholder:                 "Search...";
     placeholder-color:           inherit;
@@ -123,7 +123,7 @@ element {
     border-radius:               0px;
     border-color:                transparent;
     background-color:            transparent;
-    text-color:                  gray;
+    text-color:                  #AACB73;
     cursor:                      pointer;
 }
 element selected.normal {
@@ -162,7 +162,7 @@ button {
 }
 button selected {
     background-color:            inherit;
-    text-color:                  #FF9030;
+    text-color:                  #E06C75FF;
 }
 
 /*****----- Message -----*****/
