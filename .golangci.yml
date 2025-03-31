@@ -15,6 +15,8 @@ linters:
     - wrapcheck
     - mnd
     - tagliatelle
+    - wsl
+    - gochecknoglobals
   settings:
     bidichk:
       left-to-right-embedding: true
