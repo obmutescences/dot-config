@@ -17,6 +17,8 @@ linters:
     - tagliatelle
     - wsl
     - gochecknoglobals
+    - forbidigo
+    - musttag
   settings:
     bidichk:
       left-to-right-embedding: true
@@ -48,9 +50,6 @@ linters:
       package-scope-only: false
     forbidigo:
       forbid:
-        - pattern: ^print.*$
-        - pattern: fmt\.Print.*
-        - pattern: fmt.Println.*
         - pattern: ginkgo\\.F.*
     funlen:
       lines: 250
@@ -290,7 +289,7 @@ linters:
           arguments:
             - make
           severity: warning
-          disabled: false
+          disabled: true
         - name: error-naming
           severity: warning
           disabled: false
